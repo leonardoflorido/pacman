@@ -20,6 +20,7 @@ source venv/bin/activate
 3. Install the requirements:
 
 ```sh
+brew install swig
 pip3 install -r requirements.txt
 ```
 
