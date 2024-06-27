@@ -1,2 +1,2 @@
-# pacman
+# Pacman
 Pacman artificial intelligence.
