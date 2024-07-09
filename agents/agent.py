@@ -4,7 +4,7 @@ import torch
 import torch.optim as optim
 import torch.nn.functional as F
 
-from collections import namedtuple, deque
+from collections import deque
 from models.network import Network
 from utils import preprocess_frame
 
