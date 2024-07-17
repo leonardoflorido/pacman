@@ -1,4 +1,3 @@
-import random
 from collections import deque
 import numpy as np
 import torch
@@ -19,7 +18,7 @@ def train():
     agent = Agent(number_actions)
 
     number_episodes = 2000
-    maximum_number_timesteps_per_episode = 1000
+    maximum_number_timesteps_per_episode = 10000
     epsilon_starting_value = 1.0
     epsilon_ending_value = 0.01
     epsilon_decay_value = 0.995
@@ -46,7 +45,7 @@ def train():
         if episode % 100 == 0:
             print('\rEpisode {}\tAverage Score: {:.2f}'.format(episode, np.mean(scores_on_100_episodes)))
             
-        if np.mean(scores_on_100_episodes) >= 200.0:
+        if np.mean(scores_on_100_episodes) >= 500.0:
             print('\nEnvironment solved in {:d} episodes!\tAverage Score: {:.2f}'.format(episode - 100, np.mean(scores_on_100_episodes)))
             torch.save(agent.local_qnetwork.state_dict(), 'checkpoint.pth')
             break
