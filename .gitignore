@@ -1,4 +1,11 @@
+# Virtual environment
 venv
+
+# Python cache
 __pycache__
+
+# Model checkpoint
 checkpoint.pth
+
+# Video
 video.mp4

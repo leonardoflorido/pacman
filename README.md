@@ -2,6 +2,10 @@
 
 Pacman artificial intelligence.
 
+## Development
+
+This project was developed using Python 3.10.14.
+
 ## Installation
 
 1. Clone the repository:
